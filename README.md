@@ -93,3 +93,84 @@
 }
 
 ```
+
+
+
+## Order
+### List Order
+>GET /api/user/v1/order
+####Response:
+```
+{
+	"code" : 0,
+	"message" : "success",
+	"data" : [
+		{
+		"order_id" : 1,
+		"List Product" : "List Product",
+		"status": "status"
+}
+]
+}
+```
+####upaid
+```
+{
+	"data" : [
+		{
+		"order_id" : 1,
+		"payment" : "payment",
+		"price" : "55RMB",
+		"cancel" : "cancel"
+}
+]
+}
+```
+
+####paid
+```
+		{
+			"data" :[
+	{
+		"order_id" : 1,
+		"ship-status" : "ship-status",
+		"cancel" : "cancel"
+}
+]
+}
+```
+
+# Admin API
+##ship
+###ship-status
+>GET /api/admin/v2/shippong
+#####Response:
+```
+{
+	"code" : 0,
+	"message" : "success",
+	"data" : [
+{
+		"order_id" : 1,
+		"ship_id" : 1,
+		"img" : "ding wei"
+}
+]
+}
+```
+
+
+
+##Payment
+###Payment-List
+```
+{
+		"data" :[
+	{
+		"type": "wechat",
+		"status" : "paid"
+}
+
+]
+}
+```
