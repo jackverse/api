@@ -5,14 +5,13 @@
 #### Response:
 (```)
 {
-	"code" : 0,
-	"message" : "success",
-	"data":[
-	        {
-		"product_id" : 1,
-		"name" : "for example produt"
-	
-		}
-	]
+    "code": 0,
+    "message": "success",
+    "data": [
+        {
+            "product_id": 1,
+            "name": "Learn English from Beginning"
+        }
+    ]
 }
 (```)
