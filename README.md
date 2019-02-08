@@ -1,7 +1,9 @@
 # User API
 ## Product
 ### List Product
->GET /api/user/v1/products
+
+> GET /api/user/v1/products
+
 #### Response:
 ```
 {
@@ -21,7 +23,9 @@
 ```
 
 ### Product Details
->GET /api/user/v1/product/1
+
+> GET /api/user/v1/product/<productId>
+
 #### Response:
 ```
 {
@@ -37,7 +41,6 @@
 			"img" : "https://item.jd.com/1238332.html",
 			"province" : "beijing",
             "color" : "blue" 
-
             }
 		
       ]
@@ -345,7 +348,7 @@
                "oder_id" : 1,
                "account" : 5552,
                "product-name" : "MEIZU mobile",
-               "description" : "blue "
+               "description" : "blue",
                "payment-status" : "paying"
 
             } 
