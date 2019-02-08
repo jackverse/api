@@ -105,7 +105,7 @@
 ## Cart
 ### List Cart
 >GET /api/user/v1/cart
-####Response:
+#### Response:
 ```
 {
 		"code" : 0,
