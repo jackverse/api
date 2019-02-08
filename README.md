@@ -299,6 +299,7 @@
 ```
 
 ### streamed
+```
 {
       "data" : [
       
@@ -307,8 +308,10 @@
          }
     ]    
 }
+```
 
 #### Confirmation-of-receipt
+```
 {
         "data" : [
             {
@@ -319,6 +322,7 @@
     ]    
     
 }
+```
 
 ## Payment
 ### Payment-List
