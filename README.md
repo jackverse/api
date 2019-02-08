@@ -36,10 +36,10 @@
 		"data":[
 			{
             "product_id" : 1,
-			"name" : "MeiZu mobile",
-			"description" : "this is the product",
-			"price" : 2000,
-			"img" : "https://item.jd.com/1238332.html"
+            "name" : "MeiZu mobile",
+            "description" : "this is the product",
+            "price" : 2000,
+            "img" : "https://item.jd.com/1238332.html"
             "sku" : [
                   {
                     "sku_id" : 1,
@@ -78,11 +78,11 @@
             "user_id" ; 1,
             "product_id" : 1,
             "sku_id" : 1,
-			"cart_id" : 1,
-			"img" : "https://item.jd.com/5089253.html#crumb-wrap",
-			"description" : "MEIZU mobile",
-			"contunt" : 1,
-			"price" : 500 ,
+            "cart_id" : 1,
+            "img" : "https://item.jd.com/5089253.html#crumb-wrap",
+            "description" : "MEIZU mobile",
+            "contunt" : 1,
+            "price" : 500 ,
             "select-count-status" : 1,
             "select-total-amount" : 500
            }
@@ -165,11 +165,11 @@
 	"message" : "success",
 	"data" : [
 		{
-		"order_id" : 1,
-		"product_id" : 1,
+        "order_id" : 1,
+        "product_id" : 1,
         "sku_id" : 1,
         "order_no" : 15664646,
-		"status": 10,
+        "status": 10,
         "postage" : 5000,
         "payment_type" : 1,
         "payment" : 100
@@ -215,13 +215,13 @@
 ### paying-order
 ```
 		{
-			"data" :[
+             "data" :[
 	      {
-		     "user_id" : 1,
+             "user_id" : 1,
              "order_id" : 1,
              "product" : 1,
              "sku_id" : 1,
-		     "payment" : 555,
+             "payment" : 555,
 
          }
      ]
@@ -312,11 +312,11 @@
 	"message" : "success",
 	"data" : [
          {
-		   "order_id" : 1,
+           "order_id" : 1,
            "order_no" : 45456465,
-		   "stream_id" : 1,
+           "stream_id" : 1,
            "stream-status" : "streaming", 
-		   "img" : "http://www.sss.com"
+           "img" : "http://www.sss.com"
            "stream-address" : "xi'an" 
          }
     ]
@@ -334,11 +334,11 @@
 {
         "code" : 0 ,
         "message" : "success",
-		"data" :[
+        "data" :[
 	    {
             "pay_id" : 1,
-		   "type": 0,
-		   "status" : 1
+            "type": 0,
+            "status" : 1
       }
    ]
 }
