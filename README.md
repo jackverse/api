@@ -195,70 +195,6 @@
 
 
 
-### upaid-order
-```
-{
-    "data" : [
-        {
-        "order_id" : 1,
-        "order_no" : 5456464,
-        "product_id" : 1,
-        "user_id" : 1,
-        "payment" : 222,
-        "payment_type" : 1,
-        "status" : 10
-       }
-   ]
-}
-```
-
-### paying-order
-```
-        {
-             "data" :[
-          {
-             "user_id" : 1,
-             "order_id" : 1,
-             "product" : 1,
-             "sku_id" : 1,
-             "payment" : 555,
-
-         }
-     ]
-}
-
-```
-
-### view-the-logistics
-```
-{
-                     "data" : [
-                           {
-                              
-                              "order_id" :1,
-                              "product-name" : "MEIZU mobile",
-                              "tracking-number" : 121515656
-                         }
-             ]
-
-}
-```
-
-
-
-### Confirmation-of-receipt
-
-> DELETE /api/user/v1/order/[orderId]
-
-#### Response
-```
-{
-        "code" : 0,
-        "message" : "success"
-    
-}
-
-```
 
 # Admin API
 ### order-management
@@ -289,7 +225,7 @@
 
 ```
 
-> DELETE /api/admin/v1/order
+> DELETE /api/admin/v1/order/[orderId]
 ```
 {
             "code" : 0,
@@ -300,59 +236,4 @@
 ```
 
 
-## stream
-### stream-status
 
->GET /api/admin/v2/stream
-
-#### Response:
-```
-{
-    "code" : 0,
-    "message" : "success",
-    "data" : [
-         {
-           "order_id" : 1,
-           "order_no" : 45456465,
-           "stream_id" : 1,
-           "stream-status" : "streaming", 
-           "img" : "http://www.sss.com"
-           "stream-address" : "xi'an" 
-         }
-    ]
-}
-```
-
-
-
-## Payment
-### Payment-List
-
-> GET /api/admin/v1/payment
-
-```
-{
-        "code" : 0 ,
-        "message" : "success",
-        "data" :[
-        {
-            "pay_id" : 1,
-            "type": 0,
-            "status" : 1
-      }
-   ]
-}
-```
-
-> DELETE /api/admin/v1/payment
-
-#### Response
-
-```
-{
-           "code" : 0,
-           "message" : "success"
-    
-}
-
-```
