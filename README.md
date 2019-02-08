@@ -24,7 +24,7 @@
 
 ### Product Details
 
-> GET /api/user/v1/product/<productId>
+> GET /api/user/v1/product/[productId]
 
 #### Response:
 ```
