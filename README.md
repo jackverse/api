@@ -19,28 +19,87 @@
 }
 ```
 
-### Details Product
->GET /api/user/v1/products-details
+### Product Details
+>GET /api/user/v1/product/1
 #### Response:
 ```
 {
-		"code" : 0,
+        "code" : 0,
 		"message" : "success",
 		"data":[
 			{
+            "product_id" : 1,
 			"sku_id" : 1,
-			"name" : "product",
+			"name" : "MeiZu mobile",
 			"description" : "this is the product",
-			"price" : "10RMB",
-			"img" : "this is the picture",
+			"price" : 2000,
+			"img" : "https://item.jd.com/1238332.html",
 			"province" : "beijing",
-			 "shop" : "the CHINA best shop"
+            "color" : "blue" 
 
-}
+            }
 		
-]
+      ]
 }
 ```
+
+#### Sku Classify
+>GET /api/user/v1/sku/2
+#### Response:
+```
+{
+            "code" : 0 ,
+            "message" : "success",
+            "data" : [
+              {
+                  "product_id" : 1 , 
+                  "sku_id" : 1 ,
+                  "name" : "MeiZu mobile",
+                  "description" : "MeiZu Red mobile",
+                  "price" : 2500,
+                  "img" : "https://item.jd.com/5089253.html#crumb-wrap",
+                  "province" : "beijing",
+                  "color" : "red"
+            }
+        ]
+}
+
+
+```
+
+#### Add Product
+```
+{
+            "data" : [
+            {
+                "count" : 1,
+                count++      
+                
+                
+            }
+            
+        ]    
+}
+```
+
+#### Reduce Product
+```
+{
+            "data" : [
+                 {
+                 if(count = 1){
+                             return null;       
+                                
+                            }
+                    if(count > 1) {
+                             count--;
+                        }
+              }            
+        ]
+}
+
+```
+
 
 
 ## Cart
@@ -54,15 +113,15 @@
 		"data" : [
 			{
 			"cart_id" : 1,
-			"img" : "this is the picture",
-			"description" : "my shop is the best",
-			"contunt" : 5,
-			"price" : "585RMB",
-			"move-favorite" : "move-favorite,
-			"delete" : "delete" 
-}
+			"img" : "https://item.jd.com/5089253.html#crumb-wrap",
+			"description" : "MEIZU mobile",
+			"contunt" : 1,
+			"price" : 500 ,
+            "select-count-status" : 1,
+            "select-total-amount" : 500
+           }
 	
-]
+      ]
 
 }
 
@@ -71,35 +130,95 @@
 ```
 {
 		"data" :[
-				{
-	count++;
-}
-]
+	 {
+	     count++;
+     }
+   ]
 }
 ```
 
 #### reduce count:
 ```
 {
-		"data" : [
-		{
+		"data" :  [
+	         	 {
 			if(contunt>1){
-		count--;
-}if( contunt = 1){
-		delete(cart);
-}
-}
-]
+		                   count--;
+                         }if( contunt = 1){
+		                            return null;
+                                }
+                }
+        ]
 }
 
 ```
+
+#### delete product
+```
+
+{
+            "data" : [
+                  {
+                      delete(product);            
+                    
+                }
+            
+        ]
+}
+```
+
+
+
+
+#### select count
+```
+{
+	"data" :    [ 
+              {
+		           if(select-count-status=1){
+                        
+                          select-total-amount= select-total-amount + price;
+                       }if(select-count-status=0){
+                           
+                             select-toal-amount = select-total-amount + 0 ;
+                           }
+
+
+            }
+
+      ]
+
+}
+
+
+
+```
+
+#### settle accounts
+```
+{
+         "data" [
+         
+                        {
+                           order        
+                    }
+         
+         
+         ]    
+    
+}
+
+```
+
+
+
 
 
 
 ## Order
 ### List Order
 >GET /api/user/v1/order
-####Response:
+#### Response:
 ```
 {
 	"code" : 0,
@@ -107,70 +226,111 @@
 	"data" : [
 		{
 		"order_id" : 1,
-		"List Product" : "List Product",
-		"status": "status"
-}
-]
+		"product_id" : 1,
+		"order-status": "upaid",
+        "order-amount" : 5000,
+       }
+    ]
 }
 ```
-####upaid
+#### cancel
+{
+            "data" : [
+            
+                {
+                  delete(order);    
+                    
+                    
+                }
+            
+            ]    
+    
+}
+
+
+
+
+#### upaid
 ```
 {
 	"data" : [
 		{
 		"order_id" : 1,
-		"payment" : "payment",
-		"price" : "55RMB",
-		"cancel" : "cancel"
-}
-]
+		"price" : 500,
+        cancel.delete(order);
+       }
+   ]
 }
 ```
 
-####paid
+#### paying
 ```
 		{
 			"data" :[
-	{
-		"order_id" : 1,
-		"ship-status" : "ship-status",
-		"cancel" : "cancel"
-}
-]
+	      {
+		     "order_id" : 1,
+		     "price" : 200,
+		      cancel.delete(order);
+         }
+     ]
 }
 ```
 
 # Admin API
-##ship
-###ship-status
->GET /api/admin/v2/shippong
-#####Response:
+## stream
+### stream-status
+>GET /api/admin/v2/stream
+##### Response:
 ```
 {
 	"code" : 0,
 	"message" : "success",
 	"data" : [
-{
-		"order_id" : 1,
-		"ship_id" : 1,
-		"img" : "ding wei"
-}
-]
+         {
+		   "order_id" : 1,
+		   "stream_id" : 1,
+           "stream-status" : "streaming", 
+		   "img" : "http://www.sss.com"
+           "stream-address" : "xi'an" 
+         }
+    ]
 }
 ```
 
+### streamed
+{
+      "data" : [
+      
+              {
+           return Confirmation-of-receipt;         
+         }
+    ]    
+}
 
+#### Confirmation-of-receipt
+{
+        "data" : [
+            {
+               payment.paying();
+               order.delete(order);
+        }
+        
+    ]    
+    
+}
 
-##Payment
-###Payment-List
+## Payment
+### Payment-List
+>GET /api/admin/v1/payment
 ```
 {
+        "code" : 0 ,
+        "message" : "success",
 		"data" :[
-	{
-		"type": "wechat",
-		"status" : "paid"
-}
-
-]
+	    { 
+		   "type": "wechat",
+		   "status" : "paid"
+      }
+   ]
 }
 ```
