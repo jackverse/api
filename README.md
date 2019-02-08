@@ -11,8 +11,9 @@
         {
             "product_id": 1,
             "name": "phone",
-	    "description" : "miaoshu",
-	    "price" : "RMB"
+	        "description" : "miaoshu",
+	        "price" : 1000,
+            "img" : "http://www.ss.com"
         }
 		
     ]
@@ -67,6 +68,7 @@
 
 ```
 
+
 #### Add Product
 ```
 {
@@ -99,6 +101,23 @@
 }
 
 ```
+
+#### Add-item-to-cart
+```
+{
+            "data" : [
+            
+                        {
+                        cart.add(product);        
+                            
+                    }            
+            
+            ]
+
+}
+```
+
+
 
 
 
@@ -153,7 +172,7 @@
 
 ```
 
-#### delete product
+#### delete-product
 ```
 
 {
@@ -170,7 +189,7 @@
 
 
 
-#### select count
+#### select-count
 ```
 {
 	"data" :    [ 
@@ -194,13 +213,13 @@
 
 ```
 
-#### settle accounts
+#### settle-accounts
 ```
 {
          "data" [
          
                         {
-                           order        
+                           order.add(order);       
                     }
          
          
@@ -251,7 +270,7 @@
 
 
 
-#### upaid
+### upaid-order
 ```
 {
 	"data" : [
@@ -264,7 +283,7 @@
 }
 ```
 
-#### paying
+### paying-order
 ```
 		{
 			"data" :[
@@ -275,9 +294,68 @@
          }
      ]
 }
+
+```
+
+### view-the-logistics
+```
+{
+                     "data" : [
+                           {
+                              
+                              "order_id" :1,
+                              "product-name" : "MEIZU mobile",
+                              "tracking-number" : 121515656
+                         }
+             ]
+
+}
+```
+
+
+
+### Confirmation-of-receipt
+```
+{
+              "data" : [
+              
+                     {
+                         delete(order_id);      
+            
+            }        
+              
+            
+        ]    
+    
+}
+
 ```
 
 # Admin API
+
+
+### order-management
+>GET /api/admin/v2/order
+```
+{
+           "code" : 0,
+           "message" : "success",
+           "data" : [
+              {
+               "oder_id" : 1,
+               "account" : 5552,
+               "product-name" : "MEIZU mobile",
+               "description" : "blue "
+               "payment-status" : "paying"
+
+            } 
+                
+     ]
+    
+    
+}
+
+```
 ## stream
 ### stream-status
 >GET /api/admin/v2/stream
