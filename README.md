@@ -14,8 +14,8 @@
         {
             "product_id": 1,
             "name": "phone",
-	        "description" : "miaoshu",
-	        "price" : 1000,
+            "description" : "miaoshu",
+            "price" : 1000,
             "img" : "http://www.ss.com"
         }
 		
