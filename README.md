@@ -18,7 +18,7 @@
             "price" : 1000,
             "img" : "http://www.ss.com"
         }
-		
+        
     ]
 }
 
@@ -32,30 +32,30 @@
 ```
 {
         "code" : 0,
-		"message" : "success",
-		"data":[
-			{
-            "product_id" : 1,
-            "name" : "MeiZu mobile",
-            "description" : "this is the product",
-            "price" : 2000,
-            "img" : "https://item.jd.com/1238332.html"
-            "sku" : [
-                  {
-                    "sku_id" : 1,
-                    "province" : "HeNan",
-                    "color" : "blue",
-                    "edition" : "MagBlue" 
-                {
-                    {
-                    "sku_id" : 2,
-                    "province" : "XiZang",
-                    "color" : "red",
-                    "edition" : " MagBlack"  
-                 }
-             ]
-            }
-		
+        "message" : "success",
+        "data":[
+            {
+                 "product_id" : 1,
+                 "name" : "MeiZu mobile",
+                 "description" : "this is the product",
+                 "price" : 2000,
+                 "img" : "https://item.jd.com/1238332.html"
+                 "sku" : [
+                      {
+                         "sku_id" : 1,
+                         "province" : "HeNan",
+                         "color" : "blue",
+                         "edition" : "MagBlue" 
+                      },
+                      {
+                         "sku_id" : 2,
+                         "province" : "XiZang",
+                         "color" : "red",
+                         "edition" : " MagBlack"  
+                      }
+                  ]
+             }
+        
       ]
 }
 ```
@@ -71,10 +71,10 @@
 
 ```
 {
-		"code" : 0,
-		"message" : "success",
-		"data" : [
-			{
+        "code" : 0,
+        "message" : "success",
+        "data" : [
+            {
             "user_id" ; 1,
             "product_id" : 1,
             "sku_id" : 1,
@@ -86,7 +86,7 @@
             "select-count-status" : 1,
             "select-total-amount" : 500
            }
-	
+    
       ]
 
 }
@@ -161,10 +161,10 @@
 #### Response:
 ```
 {
-	"code" : 0,
-	"message" : "success",
-	"data" : [
-		{
+    "code" : 0,
+    "message" : "success",
+    "data" : [
+        {
         "order_id" : 1,
         "product_id" : 1,
         "sku_id" : 1,
@@ -198,8 +198,8 @@
 ### upaid-order
 ```
 {
-	"data" : [
-		{
+    "data" : [
+        {
         "order_id" : 1,
         "order_no" : 5456464,
         "product_id" : 1,
@@ -214,9 +214,9 @@
 
 ### paying-order
 ```
-		{
+        {
              "data" :[
-	      {
+          {
              "user_id" : 1,
              "order_id" : 1,
              "product" : 1,
@@ -308,9 +308,9 @@
 #### Response:
 ```
 {
-	"code" : 0,
-	"message" : "success",
-	"data" : [
+    "code" : 0,
+    "message" : "success",
+    "data" : [
          {
            "order_id" : 1,
            "order_no" : 45456465,
@@ -335,7 +335,7 @@
         "code" : 0 ,
         "message" : "success",
         "data" :[
-	    {
+        {
             "pay_id" : 1,
             "type": 0,
             "status" : 1
