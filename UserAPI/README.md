@@ -1,10 +1,10 @@
 # User API
-## Product
-### List Product
+## 1. Product
+### 1.1 List Product
 
 > GET /api/user/v1/products
 
-#### Response:
+Response:
 ```
 
 {
@@ -23,11 +23,11 @@
 
 ```
 
-### Product Details
+### 1.2 Product Details
 
 > GET /api/user/v1/product/[productId]
 
-#### Response:
+Response:
 ```
 {
     "code" : 0,
@@ -60,12 +60,11 @@
 }
 ```
 
-
 ## Cart
+
 ### List Cart
 
 > GET /api/user/v1/cart/
-
 #### Response:
 
 ```
@@ -97,6 +96,8 @@
         "code" : 0,
         "message" : "success"
 }
+            "real_total_price" : 123,
+84
 
 ```
 
@@ -104,7 +105,7 @@
 
 > POST /api/user/v1/cart
 
-#### Response
+Response
 
 ```
 {
