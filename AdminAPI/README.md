@@ -1,11 +1,10 @@
 # Admin API
-## User 
+## User Managemet 
 ### List User
 
 > GET /api/admin/v1/users
 
 #### Response:
-
 ```
 {
     "code" : 0,
@@ -27,6 +26,7 @@
 
 > DELETE /api/admin/v1/user/[userId]
 
+#### Response:
 ```
 {
     "code" : 0,
@@ -81,7 +81,6 @@
 > DELETE /api/admin/v1/prouct/[productId]
 
 #### Response:
-
 ```
 {
     "code" : 0,
@@ -93,7 +92,6 @@
 > PATCH /api/admin/v1/product/[productId]
 
 #### Response:
-
 ```
 {
     "code" : 0,
@@ -117,7 +115,6 @@
 > GET /api/admin/v1/orders
 
 #### Response:
-
 ```
 {
     "code" : 0,
