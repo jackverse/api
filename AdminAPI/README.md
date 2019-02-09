@@ -41,7 +41,6 @@
 > GET /api/admin/v1/products
 
 #### Response:
-
 ```
 {
     "code" : 0,
@@ -61,8 +60,11 @@
 
 > POST /api/admin/v1/product
 
+#### Response:
 ```
 {
+    "code" : 0,
+    "message" : "success",
     "data" : [
         {
             "product_id" : 1,
