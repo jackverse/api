@@ -1,10 +1,10 @@
 # Admin API
-## User Managemet 
-### List User
+## 1 User Managemet 
+### 1.1 List User
 
 > GET /api/admin/v1/users
 
-#### Response:
+Response:
 ```
 {
     "code" : 0,
@@ -22,11 +22,11 @@
 
 ```
 
-#### Delete User
+### 1.2 Delete User
 
 > DELETE /api/admin/v1/user/[userId]
 
-#### Response:
+Response:
 ```
 {
     "code" : 0,
@@ -35,12 +35,12 @@
 
 ```
 
-## Product
-### List Product
+## 2 Product
+### 2.1 List Product
 
 > GET /api/admin/v1/products
 
-#### Response:
+Response:
 ```
 {
     "code" : 0,
@@ -58,9 +58,11 @@
 
 ```
 
+### 2.2 Add Product
+
 > POST /api/admin/v1/product
 
-#### Response:
+Request:
 ```
 {
     "code" : 0,
@@ -78,6 +80,8 @@
 
 ```
 
+### 2.3 Delete Product
+
 > DELETE /api/admin/v1/prouct/[productId]
 
 #### Response:
@@ -89,9 +93,11 @@
 
 ```
 
+### 2.4 Update Product
+
 > PATCH /api/admin/v1/product/[productId]
 
-#### Response:
+Response:
 ```
 {
     "code" : 0,
@@ -109,12 +115,12 @@
 
 ```
 
-## Order
-### List Order
+## 3 Order
+### 3.1 List Order
 
 > GET /api/admin/v1/orders
 
-#### Response:
+Response:
 ```
 {
     "code" : 0,
