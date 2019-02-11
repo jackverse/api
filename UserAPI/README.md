@@ -47,13 +47,13 @@ Response:
                     "img" : "http://www.cads.com",
                     "price" : 1000 
                 },
-                    {
-                        "sku_id" : 2,
-                        "name" : "MagBlack",
-                        "description" : "red phone",
-                        "img" : "http://wta.sad.cn",
-                        "price" : 1000  
-                     }
+                {
+                    "sku_id" : 2,
+                    "name" : "MagBlack",
+                    "description" : "red phone",
+                    "img" : "http://wta.sad.cn",
+                    "price" : 1000  
+                 }
               ]
          } 
     ]
