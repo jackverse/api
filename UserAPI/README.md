@@ -123,32 +123,6 @@ Resquest:
 
 ```
 
-#### 2.4 Update Cart
-
-> PATCH /api/user/v1/cart/[cartId]
-
-Response:
-```
-{
-    "code" : 0,
-    "message" : "success",
-    "data" : [
-        {
-            "user_id" : 1,
-            "cart_id" : 1,
-            "product_id" :1,
-            "sku_id" : 1,
-            "selete_item_count" : 1,
-            "total_price" : 550,
-            "real_total_price" : 124,
-            "order_count" : 13
-        } 
-    ]
-}
-
-```
-
-
 
 
 ## 3 Order
