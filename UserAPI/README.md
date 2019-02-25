@@ -62,7 +62,32 @@ Response:
 
 ## 2. Cart
 
-### 2.1 List Cart
+### 2.1 Add Cart
+
+> POST /api/user/v1/cart
+
+Request:
+```
+{
+    "code" : 0,
+    "message" : "success",
+    "data" : [
+        {
+            "user_id" : 1,
+            "cart_id" : 1,
+            "sku_id" : 1,
+            "product_id" : 1,
+            "select_item_count" : 13,
+            "total_price" : 550,
+            "real_total_price" : 124,
+            "order_count" : 13
+        }
+    ]
+}
+
+```
+
+### 2.2 List Cart
 
 > GET /api/user/v1/cart/
 
@@ -85,7 +110,7 @@ Response:
 
 ```
 
-#### 2.2 Delete Cart
+#### 2.3 Delete Cart
 
 > DELETE /api/user/v1/cart/[cartId]
 
@@ -97,32 +122,6 @@ Response:
          
 
 ```
-
-#### 2.3 Add Cart
-
-> POST /api/user/v1/cart
-
-Resquest:
-```
-{
-    "code" : 0,
-    "message" : "success",
-    "data" : [
-        {
-            "user_id" : 1,
-            "cart_id" : 1,
-            "sku_id" : 1,
-            "product_id" : 1,
-            "selete_item_count" : 13,
-            "total_price" : 550,
-            "real_total_price" : 124,
-            "order_count" : 13
-        }
-    ]
-}
-
-```
-
 
 
 ## 3 Order
